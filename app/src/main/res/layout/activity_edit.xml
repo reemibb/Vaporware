@@ -1,0 +1,194 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C2D"
+    tools:context=".EditActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="55dp"
+            android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:text=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingLeft="110dp"
+                android:paddingTop="10dp"
+                android:text="Edit Profile"
+                android:textColor="#C1BEBE"
+                android:textSize="24sp"
+                android:textStyle="bold" />
+        </LinearLayout>
+
+        <FrameLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="50dp"
+            android:layout_gravity="center_horizontal">
+
+            <ImageView
+                android:id="@+id/imageView3"
+                android:layout_width="100dp"
+                android:layout_height="98dp"
+                android:layout_gravity="center"
+                android:background="@drawable/circle_shape"
+                android:clickable="true"
+                android:focusable="true"
+                android:scaleType="centerCrop"
+                app:srcCompat="@drawable/ic_launcher_foreground"
+                tools:ignore="SpeakableTextPresentCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/edit_button"
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:layout_gravity="bottom|end"
+                android:layout_marginEnd="150dp"
+                android:layout_marginBottom="5dp"
+                android:background="@drawable/img_edit"
+                android:text=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+        </FrameLayout>
+
+        <EditText
+            android:id="@+id/editTextText"
+            android:layout_width="285dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="75dp"
+            android:layout_marginTop="10dp"
+            android:drawableEnd="@drawable/name_edit"
+            android:ems="10"
+            android:inputType="text"
+            android:text="@string/displayname"
+            android:textAlignment="center"
+            android:textColor="#C1BEBE"
+            android:textSize="20sp"
+            android:textStyle="bold" />
+
+        <TextView
+            android:id="@+id/textView10"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Email Address"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextTextEmailAddress"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="textEmailAddress"
+            android:text="@string/user_gmail_com"
+            android:textColor="#C1BEBE"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView11"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Username"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextUsername"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:drawableStart="@drawable/at_sign"
+            android:ems="10"
+            android:text="@string/username"
+            android:textColor="#C1BEBE"
+            tools:ignore="TouchTargetSizeCheck" />
+
+        <TextView
+            android:id="@+id/textView12"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Password"
+            android:textSize="16sp" />
+
+        <com.google.android.material.textfield.TextInputLayout
+            android:id="@+id/passwordInputLayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginEnd="20dp"
+            app:endIconMode="password_toggle"
+            app:hintTextColor="#2B2D30"
+            app:helperTextTextColor="#A92117">
+
+            <com.google.android.material.textfield.TextInputEditText
+                android:id="@+id/passwordEditText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:inputType="textPassword"
+                android:text="@string/password123"
+                android:textColor="#C1BEBE"
+                android:textColorHint="#C1BEBE"
+                tools:ignore="SpeakableTextPresentCheck" />
+        </com.google.android.material.textfield.TextInputLayout>
+
+
+        <TextView
+            android:id="@+id/textViewBirthDate"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:layout_marginTop="50dp"
+            android:text="Birth Date"
+            android:textSize="16sp" />
+
+        <EditText
+            android:id="@+id/editTextDD"
+            android:layout_width="357dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="20dp"
+            android:ems="10"
+            android:inputType="date"
+            android:text="@string/_01_12_2003"
+            android:textColor="#C1BEBE"
+            tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+        <Button
+            android:id="@+id/save_button"
+            android:layout_width="109dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="150dp"
+            android:text="Save" />
+
+
+    </LinearLayout>
+
+</androidx.constraintlayout.widget.ConstraintLayout>

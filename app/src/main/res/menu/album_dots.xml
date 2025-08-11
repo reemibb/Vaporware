@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/menu_artistgo"
+        android:title="Go to artist" />
+    <item
+        android:id="@+id/menu_albumfav"
+        android:title="Add album to favorites" />
+    <item
+        android:id="@+id/menu_artistfav"
+        android:title="Add artist to favorites" />
+    <item
+        android:id="@+id/menu_share"
+        android:title="Share" />
+</menu>

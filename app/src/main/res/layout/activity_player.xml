@@ -1,0 +1,201 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1D1D1D"
+    tools:context=".PlayerActivity">
+
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="889dp"
+        android:orientation="vertical"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="82dp"
+            android:orientation="horizontal">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/menuButton"
+                android:layout_width="70dp"
+                android:layout_height="match_parent"
+                android:layout_weight="1"
+                android:background="@null"
+                android:drawableTop="@drawable/down_arrow"
+                android:paddingTop="30dp"
+                tools:ignore="HardcodedText,SpeakableTextPresentCheck" />
+
+            <ImageView
+                android:id="@+id/imageView2"
+                android:layout_width="301dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingEnd="20dp"
+                android:paddingStart="15dp"
+                app:srcCompat="@drawable/logo"
+                tools:ignore="ContentDescription" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_button"
+                android:layout_width="40dp"
+                android:layout_height="40dp"
+                android:paddingTop="35dp"
+                android:layout_marginEnd="10dp"
+                android:background="@drawable/grip_lines"
+                android:text="u"
+                tools:ignore="HardcodedText" />
+
+        </LinearLayout>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="348dp"
+            android:layout_height="348dp"
+            android:layout_marginStart="30dp"
+            android:layout_marginEnd="10dp"
+            android:layout_marginTop="70dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <ImageButton
+                android:id="@+id/play_img"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_playlist"
+                android:contentDescription="Playlist button"
+                android:scaleType="fitXY"
+                android:text=""
+                app:srcCompat="@drawable/ag"
+                tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/play_title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:textAlignment="center"
+            android:layout_marginTop="30dp"
+            android:textSize="25sp"
+            android:text="we can't be friends" />
+        <TextView
+            android:id="@+id/play_artist"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:textColor="#A9A7A7"
+            android:textAlignment="center"
+            android:layout_marginTop="20dp"
+            android:textSize="15sp"
+            android:text="Ariana Grande" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="64dp"
+            android:layout_marginTop="40dp"
+            android:orientation="horizontal"
+            android:paddingStart="60dp">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/shuffle_btn"
+                android:layout_width="30dp"
+                android:layout_height="35dp"
+                android:background="@drawable/shuffle" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/previous_btn"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/previous" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/play_btn"
+                android:layout_width="60dp"
+                android:layout_height="60dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/play" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/next_btn"
+                android:layout_width="20dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="40dp"
+                android:background="@drawable/next" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/repeat_btn"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="30dp"
+                android:background="@drawable/repeat" />
+
+        </LinearLayout>
+
+        <SeekBar
+            android:id="@+id/seekBar2"
+            android:layout_width="370dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="20dp"
+            android:layout_marginStart="20dp"/>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="18dp"
+            android:orientation="horizontal">
+
+            <TextView
+                android:id="@+id/time1_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_weight="1"
+                android:text="0:00" />
+
+            <TextView
+                android:id="@+id/time2_text"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="250dp"
+                android:layout_weight="1"
+                android:text="0:00" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <ImageView
+                android:id="@+id/imageView11"
+                android:layout_width="98dp"
+                android:layout_height="25dp"
+                android:paddingStart="70dp"
+                app:srcCompat="@drawable/low" />
+
+            <SeekBar
+                android:id="@+id/volumeSeekBar"
+                android:layout_width="223dp"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="5dp" />
+
+            <ImageView
+                android:id="@+id/imageView12"
+                android:layout_width="71dp"
+                android:layout_height="25dp"
+                android:paddingEnd="40dp"
+                app:srcCompat="@drawable/high" />
+        </LinearLayout>
+
+
+    </LinearLayout>
+</androidx.constraintlayout.widget.ConstraintLayout>

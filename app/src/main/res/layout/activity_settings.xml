@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C2D"
+    tools:context=".SettingsActivity">
+
+    <LinearLayout
+        android:layout_width="409dp"
+        android:layout_height="match_parent"
+        android:orientation="vertical"
+        app:layout_constraintTop_toTopOf="parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="90dp"
+            android:orientation="horizontal"
+            tools:ignore="MissingConstraints">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:text=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView3"
+                android:layout_width="193dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:paddingStart="130dp"
+                android:paddingTop="10dp"
+                android:text="Settings"
+                android:textColor="#C1BEBE"
+                android:textSize="24sp"
+                android:textStyle="bold"
+                tools:ignore="HardcodedText,InefficientWeight,RtlSymmetry" />
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="748dp"
+            android:layout_marginTop="50dp"
+            android:orientation="vertical"
+            tools:ignore="TextSizeCheck">
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/profile_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/pfp"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Username"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/theme_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/brush"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Theme"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/lang_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/language"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Language"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/library_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/library_note"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Library"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText,TouchTargetSizeCheck" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/notification_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/note_center"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Notification"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/priv_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/privacy"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Privacy"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/find_button"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="20dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginEnd="20dp"
+                android:background="@android:color/transparent"
+                android:drawableStart="@drawable/queue"
+                android:drawableEnd="@drawable/right_arrow"
+                android:drawablePadding="20dp"
+                android:text="Find Us"
+                android:textAlignment="textStart"
+                android:textColor="@android:color/white"
+                android:textSize="15sp"
+                tools:ignore="HardcodedText" />
+
+            <Button
+                android:id="@+id/log_button"
+                android:layout_width="192dp"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="115dp"
+                android:layout_marginTop="30dp"
+                android:layout_marginEnd="20dp"
+                android:text="LOGOUT"
+                tools:ignore="HardcodedText" />
+
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>

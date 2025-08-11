@@ -1,0 +1,611 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:background="#1D1D1D"
+    android:padding="16dp">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:text="" />
+            <Button
+                android:id="@+id/dot_button"
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginStart="300dp"
+                android:background="@drawable/menu_dots"
+                android:text="Button"
+                tools:ignore="TouchTargetSizeCheck" />
+    </LinearLayout>
+
+        <EditText
+            android:layout_width="360dp"
+            android:layout_height="35dp"
+            android:layout_margin="10dp"
+            android:background="@drawable/search_bar"
+            android:drawableStart="@drawable/search_icon"
+            android:hint="Search..."
+            android:inputType="text"
+            android:paddingStart="10dp"
+            android:textColorHint="#717171"
+            android:textSize="16sp"
+            tools:ignore="Autofill,HardcodedText,RtlSymmetry,TextContrastCheck" />
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="260dp"
+            android:layout_height="260dp"
+            android:layout_marginStart="60dp"
+            android:layout_marginTop="10dp"
+            app:cardCornerRadius="16dp"
+            app:cardElevation="0dp">
+
+            <ImageButton
+                android:id="@+id/pop1_button"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/app_playlist"
+                android:contentDescription="Playlist button"
+                android:scaleType="fitXY"
+                android:text=""
+                app:srcCompat="@drawable/positions"
+                tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+
+        </androidx.cardview.widget.CardView>
+
+        <TextView
+            android:id="@+id/textView20"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="10dp"
+            android:textSize="30sp"
+            android:textColor="@color/white"
+            android:text="Positions" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="49dp"
+            android:orientation="horizontal">
+
+            <androidx.cardview.widget.CardView
+                android:layout_width="25dp"
+                android:layout_height="25dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                app:cardCornerRadius="30dp"
+                app:cardElevation="0dp">
+
+                <ImageButton
+                    android:id="@+id/artist_pfp"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent"
+                    android:background="@drawable/app_playlist"
+                    android:contentDescription="Playlist button"
+                    android:scaleType="fitXY"
+                    android:text=""
+                    app:srcCompat="@drawable/positions"
+                    tools:ignore="HardcodedText,RedundantDescriptionCheck" />
+
+            </androidx.cardview.widget.CardView>
+
+            <androidx.appcompat.widget.AppCompatButton
+                android:id="@+id/cancel_button"
+                android:layout_width="111dp"
+                android:layout_height="wrap_content"
+                android:background="@android:color/transparent"
+                android:text="Ariana Grande"
+                android:textAllCaps="false"
+                android:textColor="@android:color/white"
+                android:textSize="15sp" />
+
+            <TextView
+                android:id="@+id/textView34"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textAlignment="textEnd"
+                android:layout_marginEnd="20dp"
+                android:text="13 songs"
+                android:textSize="15sp" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/shuffle_button"
+            android:layout_width="164dp"
+            android:layout_height="40dp"
+            android:layout_marginStart="110dp"
+            android:layout_marginTop="10dp"
+            android:textColor="#1D1D1D"
+            android:text="SHUFFLE" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:layout_marginTop="20dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="shut up" />
+                <TextView
+                    android:id="@+id/ag1"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn1"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="motive" />
+                <TextView
+                    android:id="@+id/ag2"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn2"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="just like magic" />
+                <TextView
+                    android:id="@+id/ag3"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn3"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="off the table" />
+                <TextView
+                    android:id="@+id/ag4"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn4"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="six thirty" />
+                <TextView
+                    android:id="@+id/ag5"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn5"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="safety net" />
+                <TextView
+                    android:id="@+id/ag6"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn6"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="my hair" />
+                <TextView
+                    android:id="@+id/ag7"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn7"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="nasty" />
+                <TextView
+                    android:id="@+id/ag8"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn8"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="west side" />
+                <TextView
+                    android:id="@+id/ag9"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn9"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="love language" />
+                <TextView
+                    android:id="@+id/ag10"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn10"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="positions" />
+                <TextView
+                    android:id="@+id/ag11"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn11"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="obvious" />
+                <TextView
+                    android:id="@+id/ag12"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn12"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="60dp"
+            android:orientation="horizontal">
+
+            <LinearLayout
+                android:layout_width="191dp"
+                android:layout_height="match_parent"
+                android:layout_marginStart="10dp"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/positions13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:textSize="15sp"
+                    android:textColor="@color/white"
+                    android:text="pov" />
+                <TextView
+                    android:id="@+id/ag13"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:textSize="10sp"
+                    android:text="Ariana Grande" />
+            </LinearLayout>
+
+            <Button
+                android:id="@+id/ellip_btn13"
+                android:layout_width="20dp"
+                android:layout_height="20dp"
+                android:layout_marginStart="150dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/ellipsis"
+                android:text="" />
+        </LinearLayout>
+
+    </LinearLayout>
+</ScrollView>

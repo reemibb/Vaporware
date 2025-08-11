@@ -1,0 +1,11 @@
+<resources>
+    <string name="app_name">Vaporware</string>
+    <string name="user_gmail_com">user@gmail.com</string>
+    <string name="username">Username</string>
+    <string name="displayname">DisplayName</string>
+    <string name="password">Password</string>
+    <string name="_01_12_2003">01/12/2003</string>
+    <string name="forgot_password"><u>Forgot Password?</u></string>
+    <string name="sign_up"><u>Sign Up here</u></string>
+    <string name="password123">123</string>
+</resources>

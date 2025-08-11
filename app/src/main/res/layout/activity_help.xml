@@ -1,0 +1,451 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/main"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#1C1C2D"
+    tools:context=".HelpActivity">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        tools:layout_editor_absoluteX="1dp"
+        tools:layout_editor_absoluteY="1dp"
+        tools:ignore="MissingConstraints">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <Button
+                android:id="@+id/back_button"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_marginStart="10dp"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/back"
+                android:text=""
+                tools:ignore="SpeakableTextPresentCheck,TouchTargetSizeCheck" />
+
+            <TextView
+                android:id="@+id/textView13"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tilt_warp"
+                android:text="Frequently Asked Questions"
+                android:textAlignment="center"
+                android:textColor="#D5D4D4"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="vertical"
+                android:background="#18FFFFFF"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp">
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/faq1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/right_arrow"
+                        android:drawablePadding="20dp"
+                        android:text="1. How to create an account?"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answer1"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bottom_border"
+                        android:padding="5dp"
+                        android:text="To create an account, open the app, tap 'Sign Up,' and follow the prompts to enter your email, set a password, and complete registration."
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                </LinearLayout>
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:orientation="vertical">
+
+                    <androidx.appcompat.widget.AppCompatButton
+                        android:id="@+id/faq2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="20dp"
+                        android:background="@android:color/transparent"
+                        android:drawableStart="@drawable/right_arrow"
+                        android:drawablePadding="20dp"
+                        android:text="2. How to create playlists?"
+                        android:textAlignment="textStart"
+                        android:textAllCaps="false"
+                        android:textColor="@android:color/white"
+                        android:textSize="15sp"
+                        tools:ignore="HardcodedText" />
+
+                    <TextView
+                        android:id="@+id/answer2"
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginStart="65dp"
+                        android:layout_marginEnd="20dp"
+                        android:background="@drawable/bottom_border"
+                        android:padding="5dp"
+                        android:text="To create playlists, go to the menu, and click 'Create Playlist'."
+                        android:textColor="@android:color/white"
+                        android:textSize="14sp"
+                        android:visibility="gone" />
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/faq3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/right_arrow"
+                            android:drawablePadding="20dp"
+                            android:text="3. Can I use the app on multiple devices?"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/answer3"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bottom_border"
+                            android:padding="5dp"
+                            android:text="Yes, you can use the app on multiple devices by logging in with the same account."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/faq4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/right_arrow"
+                            android:drawablePadding="20dp"
+                            android:text="4. How do I update my personal information?"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/answer4"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bottom_border"
+                            android:padding="5dp"
+                            android:text="Click on profile icon then edit icon."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/faq5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/right_arrow"
+                            android:drawablePadding="20dp"
+                            android:text="5. How do I enable or disable notifications?"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/answer5"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bottom_border"
+                            android:padding="5dp"
+                            android:text="To control notification, go to Settings then Notifications, and toggle the first option."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/faq6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/right_arrow"
+                            android:drawablePadding="20dp"
+                            android:text="6. Why can’t I log into my account?"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/answer6"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bottom_border"
+                            android:padding="5dp"
+                            android:text="You might be entering incorrect credentials, or your account could be locked; try resetting your password or contacting support for help."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:orientation="vertical">
+
+                        <androidx.appcompat.widget.AppCompatButton
+                            android:id="@+id/faq7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="20dp"
+                            android:background="@android:color/transparent"
+                            android:drawableStart="@drawable/right_arrow"
+                            android:drawablePadding="20dp"
+                            android:text="7. How do I change payment plan?"
+                            android:textAlignment="textStart"
+                            android:textAllCaps="false"
+                            android:textColor="@android:color/white"
+                            android:textSize="15sp"
+                            tools:ignore="HardcodedText" />
+
+                        <TextView
+                            android:id="@+id/answer7"
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginStart="65dp"
+                            android:layout_marginEnd="20dp"
+                            android:background="@drawable/bottom_border"
+                            android:padding="5dp"
+                            android:text="To change payment plan, go to profile, cancel payment and subscribe to one of the available plans."
+                            android:textColor="@android:color/white"
+                            android:textSize="14sp"
+                            android:visibility="gone" />
+                    </LinearLayout>
+                </LinearLayout>
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView14"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tilt_warp"
+                android:layout_marginTop="20dp"
+                android:text="Report a problem"
+                android:textAlignment="center"
+                android:textColor="#D5D4D4"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="313dp"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:background="#18FFFFFF"
+                android:orientation="vertical">
+
+                <EditText
+                    android:id="@+id/topic_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bottom_border"
+                    android:hint="Topic" />
+
+                <EditText
+                    android:id="@+id/email_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:padding="10dp"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bottom_border"
+                    android:hint="Email"
+                    android:inputType="textEmailAddress" />
+                <EditText
+                    android:id="@+id/deets_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:ems="10"
+                    android:layout_marginStart="20dp"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginTop="10dp"
+                    android:paddingTop="10dp"
+                    android:paddingStart="10dp"
+                    android:paddingEnd="50dp"
+                    android:paddingBottom="100dp"
+                    android:inputType="text"
+                    android:textColorHint="@color/white"
+                    android:textColor="@color/white"
+                    android:background="@drawable/bottom_border"
+                    android:hint="Additional details" />
+
+                <Button
+                    android:id="@+id/submit_button"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="Submit"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="250dp"
+                    />
+            </LinearLayout>
+            <TextView
+                android:id="@+id/textView15"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:fontFamily="@font/tilt_warp"
+                android:layout_marginTop="20dp"
+                android:text="Rate us"
+                android:textAlignment="center"
+                android:textColor="#D5D4D4"
+                android:textSize="25sp"
+                tools:ignore="HardcodedText" />
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginStart="30dp"
+                android:layout_marginEnd="20dp"
+                android:layout_marginBottom="20dp"
+                android:background="#18FFFFFF"
+                android:orientation="vertical">
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:orientation="horizontal"
+                    android:layout_marginTop="8dp"
+                    android:layout_marginStart="80dp"
+                    android:gravity="center">
+                    <ImageView
+                        android:id="@+id/star1"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/star_empty" />
+                    <ImageView
+                        android:id="@+id/star2"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/star_empty" />
+                    <ImageView
+                        android:id="@+id/star3"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/star_empty" />
+                    <ImageView
+                        android:id="@+id/star4"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/star_empty" />
+                    <ImageView
+                        android:id="@+id/star5"
+                        android:layout_width="40dp"
+                        android:layout_height="40dp"
+                        android:src="@drawable/star_empty" />
+                </LinearLayout>
+
+                <TextView
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="16dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:text="Your Comments"
+                    android:textSize="16sp"
+                    android:textColor="@color/white" />
+
+                <EditText
+                    android:id="@+id/feedback_edit_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="100dp"
+                    android:hint="Tell us more..."
+                    android:background="@drawable/bottom_border"
+                    android:paddingBottom="70dp"
+                    android:layout_marginStart="30dp"
+                    android:layout_marginEnd="20dp"
+                    android:textColorHint="#7C7C7C"
+                    android:textColor="@color/white"
+                    android:textSize="14sp" />
+
+                <Button
+                    android:id="@+id/submit_feedback_button"
+                    android:layout_width="150dp"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="20dp"
+                    android:layout_marginStart="110dp"
+                    android:text="Submit Feedback"
+                    android:textColor="@android:color/white" />
+            </LinearLayout>
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
